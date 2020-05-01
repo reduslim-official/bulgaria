@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>
+        Благодарим! Вашата поръчка е приета!
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=320">
+    <meta name="MobileOptimized" content="width=320">
+    <link href="css/css_1.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link media="all" rel="stylesheet" type="text/css" href="css/order-style.css">
+</head>
+
+<body>
+    <script src="js/counter.js"></script>
+    <div id="wrapper">
+        <div class="container">
+            <span class="decoration">
+        </span>
+            <div class="order-block">
+                <div class="text-holder">
+                    <h2><span>Благодарим! </span> Вашата поръчка е приета!</h2>
+                    <p>Наш оператор ще се свърже с Вас за потвърждение на поръчката. <br> Доставката се извършва посредством куриер или по пощата. Заплащането е при получаването!</p>
+                </div>
+                <div class="text-box">
+                    <h2>
+                        Участвайте <span>в акцията.</span>
+                    </h2>
+                    <p>
+                        За да вземете участие в акцията и да следите статуса на Вашата поръчка, въведете имейла си и натиснете „Запамети”!
+                    </p>
+                    <form class="order-form" id="email_form" action="#">
+                        <fieldset>
+                            <div class="text">
+                                <input type="email" id="email" placeholder="Въведете Вашия e-mail..." name="email">
+                            </div>
+                            <input data-error="Въведете Вашия e-mail" data-success="Благодарим Ви за участието! Вашият е-mail е запаметен!" class="btn-save" type="submit" value="Запамети">
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
+    <script src="js/purl.min.js"></script>
+    <script src="js/leadprofit.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(document).leadprofitConfirm();
+        });
+    </script>
+</body>
+
+</html>
